@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+
+        android:id="@+id/img_mine"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/minecraft"
+        android:layout_gravity="center">
+    </ImageView>
+    <TextView
+        android:id="@+id/tv_mate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btn_media"
+        android:layout_marginTop="10dp"
+        android:text="Tipos de Material:"/>
+    <Spinner
+        android:id="@+id/my_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_contr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btn_media"
+        android:layout_marginTop="10dp"
+        android:text="Número de construtores:"/>
+    <EditText
+        android:id="@+id/edt_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:backgroundTint="@color/black"
+        android:hint="Digite o número de construtores"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_consultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Tempo"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/verde"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tv_resul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btn_media"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

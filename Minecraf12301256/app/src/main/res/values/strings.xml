@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Minecraf12301256</string>
+
+<!-- add the following below to the existing code-->
+<string name="nome">Selected item:</string>
+<string-array name="spinner">
+    <item>Madeira</item>
+    <item>Ouro</item>
+    <item>Diamante</item>
+</string-array>
+</resources>
